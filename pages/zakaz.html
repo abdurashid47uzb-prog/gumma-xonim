@@ -1,0 +1,379 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Buyurtma berish | Gumma-Xonim</title>
+
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        <div id="container">
+
+            <a href="../index.html" id="logo">
+                <span>GUMMA</span>
+                <small>XONIM</small>
+            </a>
+
+            <nav id="nav">
+                <a href="../index.html">Bosh sahifa</a>
+                <a href="../pages/home.html">Menyu</a>
+                <a href="../index.html#about">Biz haqimizda</a>
+                <a href="../index.html#contact">Aloqa</a>
+            </nav>
+
+            <a href="./zakaz.html" id="order-btn">
+                Buyurtma
+            </a>
+
+            <button id="menu-btn" type="button">
+                ☰
+            </button>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- ORDER HERO -->
+        <section id="order-page">
+
+            <div id="order-container">
+
+                <div id="order-heading">
+                    <p>GUMMA-XONIM</p>
+
+                    <h1>
+                        Buyurtma<br>
+                        <span>berish</span>
+                    </h1>
+
+                    <span>
+                        Sevimli taomingizni tanlang,
+                        ma'lumotlaringizni kiriting va
+                        buyurtma bering.
+                    </span>
+                </div>
+
+
+                <!-- ORDER BOX -->
+                <div id="order-box">
+
+                    <div id="order-products">
+
+                        <h2>Taomni tanlang</h2>
+
+                        <div id="order-product-list">
+
+                            <!-- GUMMA -->
+                            <label id="order-product">
+                                <input
+                                    type="radio"
+                                    name="product"
+                                    value="gumma"
+                                    data-name="Gumma"
+                                    data-price="5000"
+                                    checked
+                                >
+
+                                <div id="order-product-image">
+                                    <img
+                                        src="../images/gumma.jpg"
+                                        alt="Gumma"
+                                    >
+                                </div>
+
+                                <div id="order-product-info">
+                                    <h3>Gumma</h3>
+                                    <p>Go‘shtli mazali gumma</p>
+                                    <strong>5 000 so‘m</strong>
+                                </div>
+
+                                <span id="radio-check">✓</span>
+                            </label>
+
+
+                            <!-- XONIM -->
+                            <label id="order-product">
+                                <input
+                                    type="radio"
+                                    name="product"
+                                    value="xonim"
+                                    data-name="Xonim"
+                                    data-price="8000"
+                                >
+
+                                <div id="order-product-image">
+                                    <img
+                                        src="../images/xonim.jpg"
+                                        alt="Xonim"
+                                    >
+                                </div>
+
+                                <div id="order-product-info">
+                                    <h3>Xonim</h3>
+                                    <p>Yumshoq va mazali xonim</p>
+                                    <strong>8 000 so‘m</strong>
+                                </div>
+
+                                <span id="radio-check">✓</span>
+                            </label>
+
+
+                            <!-- KOMBO -->
+                            <label id="order-product">
+                                <input
+                                    type="radio"
+                                    name="product"
+                                    value="kombo"
+                                    data-name="Gumma Kombo"
+                                    data-price="25000"
+                                >
+
+                                <div id="order-product-image">
+                                    <img
+                                        src="../images/images.jpg"
+                                        alt="Gumma Kombo"
+                                    >
+                                </div>
+
+                                <div id="order-product-info">
+                                    <h3>Gumma Kombo</h3>
+                                    <p>Maxsus kombo to‘plam</p>
+                                    <strong>25 000 so‘m</strong>
+                                </div>
+
+                                <span id="radio-check">✓</span>
+                            </label>
+
+                        </div>
+
+
+                        <!-- QUANTITY -->
+                        <div id="quantity-box">
+
+                            <h2>Miqdor</h2>
+
+                            <div id="quantity-control">
+
+                                <button
+                                    id="minus-btn"
+                                    type="button"
+                                >
+                                    −
+                                </button>
+
+                                <span id="quantity">
+                                    1
+                                </span>
+
+                                <button
+                                    id="plus-btn"
+                                    type="button"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CUSTOMER FORM -->
+                    <div id="customer-form">
+
+                        <h2>Ma'lumotlaringiz</h2>
+
+                        <div id="form-group">
+                            <label for="name">
+                                Ismingiz
+                            </label>
+
+                            <input
+                                id="name"
+                                type="text"
+                                placeholder="Ismingizni kiriting"
+                                autocomplete="name"
+                            >
+                        </div>
+
+
+                        <div id="form-group">
+                            <label for="phone">
+                                Telefon raqamingiz
+                            </label>
+
+                            <input
+                                id="phone"
+                                type="tel"
+                                placeholder="+998 90 123 45 67"
+                                autocomplete="tel"
+                            >
+                        </div>
+
+
+                        <div id="form-group">
+                            <label for="address">
+                                Manzil
+                            </label>
+
+                            <input
+                                id="address"
+                                type="text"
+                                placeholder="Manzilingizni kiriting"
+                                autocomplete="street-address"
+                            >
+                        </div>
+
+
+                        <div id="form-group">
+                            <label for="comment">
+                                Izoh
+                            </label>
+
+                            <textarea
+                                id="comment"
+                                placeholder="Qo‘shimcha izoh..."
+                                rows="4"
+                            ></textarea>
+                        </div>
+
+
+                        <!-- TOTAL -->
+                        <div id="order-total">
+
+                            <div>
+                                <span>Taom:</span>
+                                <strong id="selected-product">
+                                    Gumma
+                                </strong>
+                            </div>
+
+                            <div>
+                                <span>Miqdor:</span>
+                                <strong id="selected-quantity">
+                                    1 dona
+                                </strong>
+                            </div>
+
+                            <div id="total-line">
+                                <span>Jami:</span>
+                                <strong id="total-price">
+                                    5 000 so‘m
+                                </strong>
+                            </div>
+
+                        </div>
+
+
+                        <!-- SUBMIT -->
+                        <button
+                            id="submit-order"
+                            type="button"
+                        >
+                            Buyurtma berish
+                            <span>→</span>
+                        </button>
+
+                        <p id="order-note">
+                            Buyurtma berish tugmasini bosganingizdan
+                            so‘ng buyurtmangiz qabul qilinadi.
+                        </p>
+
+                        <p id="order-success">
+                            ✓ Buyurtmangiz muvaffaqiyatli qabul qilindi!
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer id="footer">
+
+        <div id="footer-container">
+
+            <div id="footer-logo">
+
+                <a href="../index.html">
+                    <span>GUMMA</span>
+                    <small>XONIM</small>
+                </a>
+
+                <p>
+                    Mazali taomlar va yaxshi kayfiyat.
+                </p>
+
+            </div>
+
+
+            <div id="footer-links">
+
+                <h3>Sahifalar</h3>
+
+                <a href="../index.html#home">
+                    Bosh sahifa
+                </a>
+
+                <a href="../index.html#menu">
+                    Menyu
+                </a>
+
+                <a href="../index.html#about">
+                    Biz haqimizda
+                </a>
+
+                <a href="../index.html#contact">
+                    Aloqa
+                </a>
+
+            </div>
+
+
+            <div id="footer-order">
+
+                <h3>Aloqa</h3>
+
+                <p>
+                    Savollar bo‘lsa biz bilan bog‘laning.
+                </p>
+
+                <a href="tel:+998900000000">
+                    +998 90 000 00 00
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div id="copyright">
+            <p>
+                © 2026 Gumma-Xonim. Barcha huquqlar himoyalangan.
+            </p>
+        </div>
+
+    </footer>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>
+```
